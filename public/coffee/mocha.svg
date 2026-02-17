@@ -1,0 +1,6 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f5e6d3"/>
+  <rect x="120" y="80" width="160" height="240" rx="10" fill="#3e2723"/>
+  <path d="M120 120 Q200 160 280 120" stroke="#fff" stroke-width="10" fill="none"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="40" fill="#fff">Mocha</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f5e6d3"/>
+  <path d="M140 100 L260 100 L240 350 L160 350 Z" fill="#fff" stroke="#d0d0d0" stroke-width="5"/>
+  <path d="M145 110 L255 110 L245 250 L155 250 Z" fill="#Cba182"/>
+  <path d="M155 250 L245 250 L242 340 L158 340 Z" fill="#fff"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="40" fill="#5c4033">Latte</text>
+</svg>

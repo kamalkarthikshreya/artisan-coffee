@@ -1,20 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { CartProvider } from '@/lib/CartContext';
+import Header from '@/components/Header';
 import './globals.css';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter'
-});
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair'
-});
-
 export const metadata: Metadata = {
-  title: 'Artisan Coffee | Experience Excellence',
-  description: 'Premium coffee experiences crafted to perfection',
+  title: 'Artisan Coffee',
+  description: 'Premium coffee for coffee lovers',
 };
 
 export default function RootLayout({
@@ -23,8 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className="bg-[#1A0F0A] text-[#F5E6D3]">
+        <CartProvider>
+          <Header />
+          {children}
+        </CartProvider>
+      </body>
     </html>
   );
 }

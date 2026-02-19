@@ -1,29 +1,23 @@
 'use client';
 
-import { useEffect } from 'react';
 import HeroCanvasAnimation from '@/components/HeroCanvasAnimation';
 import ProductShowcase from '@/components/ProductShowcase';
 import FeatureSection from '@/components/FeatureSection';
 import FinalCTA from '@/components/FinalCTA';
 
 export default function Home() {
-  useEffect(() => {
-    // Ensure smooth scroll behavior
-    document.documentElement.style.scrollBehavior = 'smooth';
-  }, []);
-
   return (
-    <main className="bg-[#1A0F0A] min-h-screen">
-      {/* Hero: Scroll-Triggered Canvas Animation */}
+    <main className="bg-[#1A0F0A] overflow-hidden">
+      {/* Video Hero Section */}
       <HeroCanvasAnimation />
-
-      {/* Product Showcase Section */}
+      
+      {/* Product Showcase */}
       <ProductShowcase />
-
-      {/* Feature Highlights Section */}
+      
+      {/* Features Section */}
       <FeatureSection />
-
-      {/* Final Call-to-Action */}
+      
+      {/* Final CTA */}
       <FinalCTA />
     </main>
   );
